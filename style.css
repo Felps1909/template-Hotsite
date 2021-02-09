@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(37, 36, 36, 0.979);
+}
+
+
+/* ----------- MENU --------------- */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background-color: #1d3557;
+}
+.menu h1{
+    color: #f1faee;
+}
+.menu nav ul a{
+    text-decoration: none;
+    color: #f1faee;
+    font-size: 1.2rem;
+}
+.menu nav ul li a:hover{
+    text-decoration: underline;
+    color: #e63946;
+    font-weight: bold;
+}
+.menu nav ul{
+    list-style: none;
+    display: flex;
+}
+.menu nav ul li{
+    padding: 0 1rem;
+}
+
+/* ----------- MAIN --------------- */
+.start{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin:1rem;
+
+}
+.start img{
+    width: 50vw;
+    height: 80vh;
+}
+.text-info{
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center */
+   
+}
+.text-info  button{
+    width: 25vw;
+    height: 8vh;
+    background-color: #e63946;
+    color: #f1faee;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.text-info button:hover{
+    cursor: pointer;
+    width: 26vw;
+    height: 9vh;
+    background-color: #c92f3b;
+}
+.text-info p{
+   margin: 2rem 0;
+   color: #457b9d;
+   font-weight: bold;
+   font-size: 1.2rem;
+
+}
+.text-info h2{
+    font-size: 2rem;
+}
+/* ----------- ABOUT US --------------- */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5rem;
+    background-color: #a8dadc;
+    /* height: 100vh; */
+   
+    /* background-color: #1d3557; */
+}
+.sobre img{
+    width: 90vw;
+    height: 70vh;
+   
+}
+.sobre h1{
+    margin: 2rem 0;
+    color: #1d3557;
+    font-size: 2.6rem;
+}
+.sobre p{
+    color: #1d3557
+}
+.team-info{
+    max-width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.team-info p{
+   text-align: left;
+   margin: 0 2rem;
+   font-size: 1.2rem;   
+}
+
+/* ----------- CONTACT --------------- */
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    /* height: 88vh; */
+}
+.social h1{
+    margin: 1.5rem 0;
+    color: #1d3557;
+    font-size: 2rem;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box div{
+    margin: 1rem;
+    width: 28vw;
+    height: 55vh;
+    background-color: #1d3557;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box div:hover{
+    height: 57vh;
+    cursor:pointer;
+    background-color: #374c6a
+}
+.box div p{
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+.box div img{
+    width: 7vw;
+}
+
+/* ----------- FOOTER --------------- */
+footer {
+   background-color: #1d3557;
+   width:98vw;
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+footer h4{
+    text-align: center;
+    color: white;
+}
+
+/* ----------- BREAKPOINT --------------- */
+@media screen and (max-width:989px){
+    .team-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }  
+    .team-info p{
+        margin: 1rem;
+        text-align: justify;
+     }
+}
+@media screen and (max-width:783px){
+    .box div p{
+        text-align: center;
+        color: white;
+        margin: 2rem;
+        font-size: 0.8rem;
+    }
+    .box div img{
+        width: 6vw;
+    }
+}
